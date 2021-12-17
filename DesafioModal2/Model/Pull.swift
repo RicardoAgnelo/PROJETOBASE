@@ -12,4 +12,5 @@ struct  PullModel: Decodable, Identifiable {
     let title: String
     let createdAt: String
     let body: String
+    let htmlUrl: URL
 }

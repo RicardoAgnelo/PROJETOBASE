@@ -2,10 +2,12 @@ import Foundation
 class PullFeed: ObservableObject {
     @Published var pulls = [PullModel]()
     @Published var isLoadingPage = false
+    var repoName: String
     private var currentPage = 1
     private var canLoadMorePages = true
 
-    init() {
+    init(repoName: String) {
+        self.repoName = repoName
     }
     func scorroParte2 () {
         loadMoreContent()
@@ -24,7 +26,7 @@ class PullFeed: ObservableObject {
         }
 
         isLoadingPage = true
-            pullService { [weak self](respon)
+        pullService(repoName: self.repoName) { [weak self](respon)
             in self?.pulls.append(contentsOf: respon)
             self?.isLoadingPage = false}
         currentPage += 1

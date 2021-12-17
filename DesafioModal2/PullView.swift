@@ -10,12 +10,16 @@ import SDWebImageSwiftUI
 
 struct PullView: View {
     var repoName: String
-    @StateObject var pulls = PullFeed()
+    @ObservedObject var pulls: PullFeed
+    init(repoName: String) {
+        self.repoName = repoName
+        pulls = PullFeed(repoName: repoName)
+    }
     var body: some View {
         List(pulls.pulls) { item in
             Cell(titulo: item.title, url: item.user.avatarUrl,
                  name: item.user.login, date: item.createdAt,
-                 description: item.body).onAppear {
+                 description: item.body, urlRepo: item.htmlUrl ).onAppear {
                     pulls.loadMoreContentIfNeeded(currentItem: item)
                  }
                 .navigationTitle(repoName)
@@ -31,7 +35,9 @@ struct  Cell: View {
     var name: String
     var date: String
     var description: String
+    var urlRepo: URL
     var body: some View {
+        Link(destination: urlRepo) {
         VStack(alignment: .leading) {
             HStack {
                 AnimatedImage(url: URL(string: url)!)
@@ -71,6 +77,7 @@ struct  Cell: View {
                     .lineLimit(2)
                     .minimumScaleFactor(0.9)
             }
+        }
         }
     }
 }
