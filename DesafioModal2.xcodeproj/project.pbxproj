@@ -11,7 +11,6 @@
 		4E8B8CA5276A57CD00D346D3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8B8CA4276A57CD00D346D3 /* SceneDelegate.swift */; };
 		4E8B8CA7276A57CD00D346D3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8B8CA6276A57CD00D346D3 /* ContentView.swift */; };
 		4E8B8CA9276A57CD00D346D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E8B8CA8276A57CD00D346D3 /* Assets.xcassets */; };
-		4E8B8CAC276A57CD00D346D3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E8B8CAB276A57CD00D346D3 /* Preview Assets.xcassets */; };
 		4E8B8CAF276A57CD00D346D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E8B8CAD276A57CD00D346D3 /* LaunchScreen.storyboard */; };
 		4E8B8CDE276B656600D346D3 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 4E8B8CDD276B656600D346D3 /* Alamofire */; };
 		4E8B8D01276B9E6C00D346D3 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 4E8B8D00276B9E6C00D346D3 /* SwiftyJSON */; };
@@ -21,6 +20,10 @@
 		4E8B8D0B276BC2F300D346D3 /* RepositoriesItens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8B8D0A276BC2F300D346D3 /* RepositoriesItens.swift */; };
 		4E8B8D0E276BC34600D346D3 /* GithubServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8B8D0D276BC34600D346D3 /* GithubServices.swift */; };
 		4E8B8D11276BD10E00D346D3 /* RepositoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8B8D10276BD10E00D346D3 /* RepositoriesViewModel.swift */; };
+		4E8B8D14276D05BF00D346D3 /* PullView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8B8D13276D05BF00D346D3 /* PullView.swift */; };
+		4E8B8D16276D0C4400D346D3 /* Pull.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8B8D15276D0C4400D346D3 /* Pull.swift */; };
+		4E8B8D18276D0D8D00D346D3 /* PullService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8B8D17276D0D8D00D346D3 /* PullService.swift */; };
+		4E8B8D1A276D17CF00D346D3 /* PullViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8B8D19276D17CF00D346D3 /* PullViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +32,6 @@
 		4E8B8CA4276A57CD00D346D3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4E8B8CA6276A57CD00D346D3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4E8B8CA8276A57CD00D346D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		4E8B8CAB276A57CD00D346D3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4E8B8CAE276A57CD00D346D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4E8B8CB0276A57CD00D346D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4E8B8D06276BC27300D346D3 /* Repositories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repositories.swift; sourceTree = "<group>"; };
@@ -37,6 +39,10 @@
 		4E8B8D0A276BC2F300D346D3 /* RepositoriesItens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesItens.swift; sourceTree = "<group>"; };
 		4E8B8D0D276BC34600D346D3 /* GithubServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubServices.swift; sourceTree = "<group>"; };
 		4E8B8D10276BD10E00D346D3 /* RepositoriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesViewModel.swift; sourceTree = "<group>"; };
+		4E8B8D13276D05BF00D346D3 /* PullView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullView.swift; sourceTree = "<group>"; };
+		4E8B8D15276D0C4400D346D3 /* Pull.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pull.swift; sourceTree = "<group>"; };
+		4E8B8D17276D0D8D00D346D3 /* PullService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullService.swift; sourceTree = "<group>"; };
+		4E8B8D19276D17CF00D346D3 /* PullViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,20 +84,12 @@
 				4E8B8CA2276A57CD00D346D3 /* AppDelegate.swift */,
 				4E8B8CA4276A57CD00D346D3 /* SceneDelegate.swift */,
 				4E8B8CA6276A57CD00D346D3 /* ContentView.swift */,
+				4E8B8D13276D05BF00D346D3 /* PullView.swift */,
 				4E8B8CA8276A57CD00D346D3 /* Assets.xcassets */,
 				4E8B8CAD276A57CD00D346D3 /* LaunchScreen.storyboard */,
 				4E8B8CB0276A57CD00D346D3 /* Info.plist */,
-				4E8B8CAA276A57CD00D346D3 /* Preview Content */,
 			);
 			path = DesafioModal2;
-			sourceTree = "<group>";
-		};
-		4E8B8CAA276A57CD00D346D3 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				4E8B8CAB276A57CD00D346D3 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		4E8B8D05276BC25600D346D3 /* Model */ = {
@@ -100,6 +98,7 @@
 				4E8B8D06276BC27300D346D3 /* Repositories.swift */,
 				4E8B8D08276BC29000D346D3 /* Owner.swift */,
 				4E8B8D0A276BC2F300D346D3 /* RepositoriesItens.swift */,
+				4E8B8D15276D0C4400D346D3 /* Pull.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -108,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				4E8B8D0D276BC34600D346D3 /* GithubServices.swift */,
+				4E8B8D17276D0D8D00D346D3 /* PullService.swift */,
 			);
 			path = GitHubService;
 			sourceTree = "<group>";
@@ -116,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				4E8B8D10276BD10E00D346D3 /* RepositoriesViewModel.swift */,
+				4E8B8D19276D17CF00D346D3 /* PullViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -128,6 +129,7 @@
 			buildConfigurationList = 4E8B8CB3276A57CD00D346D3 /* Build configuration list for PBXNativeTarget "DesafioModal2" */;
 			buildPhases = (
 				4E8B8C9B276A57CD00D346D3 /* Sources */,
+				4E8B8D12276CE88700D346D3 /* ShellScript */,
 				4E8B8C9C276A57CD00D346D3 /* Frameworks */,
 				4E8B8C9D276A57CD00D346D3 /* Resources */,
 			);
@@ -188,12 +190,31 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E8B8CAF276A57CD00D346D3 /* LaunchScreen.storyboard in Resources */,
-				4E8B8CAC276A57CD00D346D3 /* Preview Assets.xcassets in Resources */,
 				4E8B8CA9276A57CD00D346D3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4E8B8D12276CE88700D346D3 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "swiftlint='/opt/homebrew/bin/swiftlint'\n\nif which $swiftlint >/dev/null; then\n    $swiftlint autocorrect && $swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4E8B8C9B276A57CD00D346D3 /* Sources */ = {
@@ -201,13 +222,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E8B8CA3276A57CD00D346D3 /* AppDelegate.swift in Sources */,
+				4E8B8D14276D05BF00D346D3 /* PullView.swift in Sources */,
 				4E8B8D0E276BC34600D346D3 /* GithubServices.swift in Sources */,
 				4E8B8D07276BC27300D346D3 /* Repositories.swift in Sources */,
 				4E8B8CA5276A57CD00D346D3 /* SceneDelegate.swift in Sources */,
 				4E8B8D09276BC29000D346D3 /* Owner.swift in Sources */,
+				4E8B8D1A276D17CF00D346D3 /* PullViewModel.swift in Sources */,
+				4E8B8D16276D0C4400D346D3 /* Pull.swift in Sources */,
 				4E8B8D11276BD10E00D346D3 /* RepositoriesViewModel.swift in Sources */,
 				4E8B8CA7276A57CD00D346D3 /* ContentView.swift in Sources */,
 				4E8B8D0B276BC2F300D346D3 /* RepositoriesItens.swift in Sources */,
+				4E8B8D18276D0D8D00D346D3 /* PullService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +301,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -331,7 +356,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -351,7 +376,7 @@
 				DEVELOPMENT_TEAM = 54N8G8CSR3;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = DesafioModal2/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -373,7 +398,7 @@
 				DEVELOPMENT_TEAM = 54N8G8CSR3;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = DesafioModal2/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

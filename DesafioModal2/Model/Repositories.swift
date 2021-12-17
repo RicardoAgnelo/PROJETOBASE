@@ -8,5 +8,5 @@
 import Foundation
 
 struct Repositories: Decodable {
-    let items : [item]
+    let items: [Item]
 }

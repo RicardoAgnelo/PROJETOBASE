@@ -11,7 +11,8 @@ import Foundation
 let baseUrl = "https://api.github.com/search/repositories"
 
 let maxItemsPerPage = 100
-func GitService(
+
+func gitService(
     search: String = "language:Swift",
     sortBy: String = "stars",
     order: String = "descending",
@@ -19,6 +20,9 @@ func GitService(
     itemsPerPage: Int = maxItemsPerPage,
     completion: @escaping (Repositories) -> Void
 ) {
+    let decoder = JSONDecoder.init()
+    decoder.dateDecodingStrategy = .iso8601
+    decoder.keyDecodingStrategy = .convertFromSnakeCase
     AF.request(
         baseUrl,
         parameters: [
@@ -28,8 +32,7 @@ func GitService(
             "per_page": itemsPerPage,
             "page": page
         ]
-    ).responseDecodable(of: Repositories.self) { response in
-        debugPrint(response)
+    ).responseDecodable(of: Repositories.self, decoder: decoder) { response in
         guard let repos = response.value else { return }
         completion(repos)
     }

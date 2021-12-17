@@ -7,12 +7,12 @@
 
 import Foundation
 
-struct item: Decodable,Identifiable {
-    let owner: owner
-    let id : Int
+struct Item: Decodable, Identifiable {
+    let owner: Owner
+    let id: Int
     let name: String
-    let full_name: String
-    let watchers_count: Int
-    let forks_count: Int
+    let fullName: String
+    let watchersCount: Int
+    let forksCount: Int
     let description: String?
 }
