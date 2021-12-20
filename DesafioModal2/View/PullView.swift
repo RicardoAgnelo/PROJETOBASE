@@ -24,7 +24,7 @@ struct PullView: View {
                  }
                 .navigationTitle(repoName)
         }.onAppear(perform: {
-            pulls.scorroParte2()
+            pulls.loadingMorePulls()
         })
     }
 }

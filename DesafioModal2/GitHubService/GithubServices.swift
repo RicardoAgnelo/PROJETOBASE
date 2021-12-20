@@ -16,8 +16,8 @@ func gitService(
     search: String = "language:Swift",
     sortBy: String = "stars",
     order: String = "descending",
-    page: Int = 1,
-    itemsPerPage: Int = maxItemsPerPage,
+    page: Int,
+    itemsPerPage: Int = 100,
     completion: @escaping (Repositories) -> Void
 ) {
     let decoder = JSONDecoder.init()

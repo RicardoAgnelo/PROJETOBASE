@@ -2,7 +2,7 @@ import Foundation
 class RepositoriesFeed: ObservableObject {
     @Published var items = [Item]()
     @Published var isLoadingPage = false
-    private var currentPage = 1
+    private var currentPage = 0
     private var canLoadMorePages = true
     init() {
         loadMoreContent()
@@ -26,5 +26,6 @@ class RepositoriesFeed: ObservableObject {
             gitService(page: currentPage) { [weak self](repos)
             in self?.items.append(contentsOf: repos.items)
             self?.isLoadingPage = false}
+        print(currentPage)
     }
 }

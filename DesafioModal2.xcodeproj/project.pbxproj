@@ -78,15 +78,11 @@
 		4E8B8CA1276A57CD00D346D3 /* DesafioModal2 */ = {
 			isa = PBXGroup;
 			children = (
+				4E8B8D1C2770091F00D346D3 /* View */,
+				4E8B8D1B2770090D00D346D3 /* App */,
 				4E8B8D0F276BD10000D346D3 /* ViewModel */,
 				4E8B8D0C276BC32C00D346D3 /* GitHubService */,
 				4E8B8D05276BC25600D346D3 /* Model */,
-				4E8B8CA2276A57CD00D346D3 /* AppDelegate.swift */,
-				4E8B8CA4276A57CD00D346D3 /* SceneDelegate.swift */,
-				4E8B8CA6276A57CD00D346D3 /* ContentView.swift */,
-				4E8B8D13276D05BF00D346D3 /* PullView.swift */,
-				4E8B8CA8276A57CD00D346D3 /* Assets.xcassets */,
-				4E8B8CAD276A57CD00D346D3 /* LaunchScreen.storyboard */,
 				4E8B8CB0276A57CD00D346D3 /* Info.plist */,
 			);
 			path = DesafioModal2;
@@ -119,6 +115,26 @@
 				4E8B8D19276D17CF00D346D3 /* PullViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4E8B8D1B2770090D00D346D3 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				4E8B8CA8276A57CD00D346D3 /* Assets.xcassets */,
+				4E8B8CA2276A57CD00D346D3 /* AppDelegate.swift */,
+				4E8B8CA4276A57CD00D346D3 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		4E8B8D1C2770091F00D346D3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4E8B8CAD276A57CD00D346D3 /* LaunchScreen.storyboard */,
+				4E8B8CA6276A57CD00D346D3 /* ContentView.swift */,
+				4E8B8D13276D05BF00D346D3 /* PullView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
